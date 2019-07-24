@@ -61,9 +61,9 @@ const portfolios = [
     id: 6,
     title: "Responsive Portfolio site",
     languages: ["Angular7", "SCSS", "HTML"],
-    url: "#",
+    url: "https://chanjong-portfolio.netlify.com/",
     imgUrl: "assets/img/projects/portfolio.jpg",
-    githubUrl: "#",
+    githubUrl: "https://github.com/rlackswhd91/ResponsivePortfolioAngular",
     description:
       "Responsive Portfolio made with Angular7, Scss and HTML. It contains portfolios, story about me and contact details"
   }
