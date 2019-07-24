@@ -1,0 +1,70 @@
+$primary-color: #313131;
+$secondary-color: #b76e69;
+$show-home-image: true;
+// css로변경되면 img폴더가 index.html과 같은 디렉토리안에있을거기때문에 그에맞춰서해야한다.
+$home-image: url(../assets/img/background.jpg);
+$background-opacity: 0.8;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+@mixin background {
+  @if $show-home-image {
+    // &의이미는 포함될곳의 bgimg아이디가있는놈즉 바디에넣으면 body#bg-img가된다
+    // linear, url 같이쓰일때 컬러변수안먹힘.
+    &#bg-img {
+      background: linear-gradient(
+          rgba(#313131, $background-opacity),
+          rgba(#313131, $background-opacity)
+        ),
+        $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+      // height: 100vh;
+
+      // psuedo쓰면 <div class="overlay">만들필요가없다.
+      //   &:after {
+      //     content: "";
+      //     position: absolute;
+      //     top: 0;
+      //     right: 0;
+      //     width: 100%;
+      //     height: 100vh;
+      //     z-index: -1;
+      //     background: rgba($primary-color, $background-opacity);
+      //   }
+    }
+  }
+}
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) >40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+//Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

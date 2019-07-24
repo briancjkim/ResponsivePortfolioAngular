@@ -1,0 +1,31 @@
+<header>
+  <div
+    (click)="onMenuClick()"
+    [ngClass]="isMenuOpen ? 'menu-btn close' : 'menu-btn '"
+  >
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+  </div>
+  <nav [ngClass]="isMenuOpen ? 'menu show' : 'menu '">
+    <div [ngClass]="isMenuOpen ? 'menu-branding show' : 'menu-branding '">
+      <div class="portrait"></div>
+    </div>
+    <ul [ngClass]="isMenuOpen ? 'menu-nav show' : 'menu-nav '">
+      <li [ngClass]="isMenuOpen ? 'nav-item show' : 'nav-item '">
+        <a routerLink="/" routerLinkActive class="nav-link ">Home</a>
+      </li>
+      <li [ngClass]="isMenuOpen ? 'nav-item show' : 'nav-item '">
+        <a routerLink="/about" routerLinkActive class="nav-link">About me</a>
+      </li>
+      <li [ngClass]="isMenuOpen ? 'nav-item show' : 'nav-item '">
+        <a routerLink="/work" routerLinkActive class="nav-link">My Work</a>
+      </li>
+      <li [ngClass]="isMenuOpen ? 'nav-item show' : 'nav-item '">
+        <a routerLink="/contact" routerLinkActive class="nav-link"
+          >How To Reach Me</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

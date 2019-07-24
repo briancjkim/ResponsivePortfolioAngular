@@ -1,0 +1,38 @@
+<div id="bg-img">
+  <app-header></app-header>
+  <main id="work-detail">
+    <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+
+    <div class="portfolio-info">
+      <img
+        [src]="selectedPortfolio.imgUrl"
+        alt="{{ selectedPortfolio.title }}"
+        class="portfolio-image"
+      />
+      <div class="portfolio">
+        <h3 class="text-secondary">{{ selectedPortfolio.title }}</h3>
+
+        <ul>
+          <li *ngFor="let language of selectedPortfolio.languages">
+            {{ language }}
+          </li>
+        </ul>
+
+        <p class="portfolio-description">
+          {{ selectedPortfolio.description }}
+        </p>
+        <div class="portfolio-btn-container">
+          <a [href]="selectedPortfolio.url" target="_blank" class=" btn-light"
+            ><i class="fas fa-eye"></i>{{ selectedPortfolio.title }}</a
+          >
+          <a
+            [href]="selectedPortfolio.githubUrl"
+            target="_blank"
+            class=" btn-dark"
+            ><i class="fab fa-github"></i> Github</a
+          >
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
