@@ -2,7 +2,7 @@ const portfolios = [
   {
     id: 1,
     title: "Twitter Clone",
-    url: "www.nodebird.xyz",
+    url: "http://nodebird.xyz/",
     languages: [
       "NodeJS",
       "Next JS",
