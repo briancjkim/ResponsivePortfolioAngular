@@ -1,6 +1,16 @@
 const portfolios = [
   {
     id: 1,
+    title: "Twitter Clone",
+    url: "www.nodebird.xyz",
+    languages: ["NodeJS", "Next JS", "React JS", "Redux", "Redux-Saga", "Ant Design","Sequelize","MYSQL","AWS-EC2"],
+    imgUrl: "assets/img/projects/nodebird.png",
+    githubUrl: "https://github.com/rlackswhd91/nodebird2.0",
+    description:
+      "Twitter clone project called nodebird allows you the post, retweet, follow, like and comment. It was built with Node JS on server Next js & React for server side rendering. It uses Redux for state management and Redux-Saga for asynchronous action dispatch. It uses premade components from Ant Design for styling, which is similar framework as React Material UI but with different looks. AWS S3 was used for file storage and AWS EC2 for deployment. Nodebird uses MYSQL and Sequelize for ORM. "
+  },
+  {
+    id: 1,
     title: "Youtube Clone",
     url: "https://utubeclone.herokuapp.com/",
     languages: ["NodeJS", "SASS", "HTML"],
@@ -29,16 +39,6 @@ const portfolios = [
   },
   {
     id: 3,
-    title: "Flat-Ui-Color Clone",
-    languages: ["React", "CSS", "HTML"],
-    url: "https://chanjong-colors.netlify.com/",
-    imgUrl: "assets/img/projects/flatuicolor.jpg",
-    githubUrl: "https://github.com/rlackswhd91/FlatUIClone",
-    description:
-      "Clone project of one of the most popular Color-Picker app. It was built with React HTML and CSS framework called Material-UI for CSS. Click and Copy color’s hash codes Design you own pallet with drag and drop colors Click to copy colors with 10 different"
-  },
-  {
-    id: 4,
     title: "Netflix Clone",
     languages: ["React", "CSS", "HTML"],
     url: "https://rlackswhd91.github.io/nomflix/#/",
@@ -47,6 +47,17 @@ const portfolios = [
     description:
       "Nomflix is a responsive front-end app that retrieves movies and TV series data. It was built with React, HTML and CSS with styled component. Data was driven from using third party API from ‘The Movie Database API. Main features include ; Search TV & Movie Get list of movies & TVs Show Collection of Movie Show related Episodes and seasons "
   },
+  {
+    id: 4,
+    title: "Flat-Ui-Color Clone",
+    languages: ["React", "CSS", "HTML"],
+    url: "https://chanjong-colors.netlify.com/",
+    imgUrl: "assets/img/projects/flatuicolor.jpg",
+    githubUrl: "https://github.com/rlackswhd91/FlatUIClone",
+    description:
+      "Clone project of one of the most popular Color-Picker app. It was built with React HTML and CSS framework called Material-UI for CSS. Click and Copy color’s hash codes Design you own pallet with drag and drop colors Click to copy colors with 10 different"
+  },
+ 
   {
     id: 5,
     title: "Concert Promotion site",
