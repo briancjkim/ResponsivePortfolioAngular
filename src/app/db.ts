@@ -51,9 +51,9 @@ const portfolios = [
     id: 4,
     title: "Netflix Clone",
     languages: ["React", "CSS", "HTML"],
-    url: "https://rlackswhd91.github.io/nomflix/#/",
+    url: "https://chanjong-nomflix-v2.netlify.com",
     imgUrl: "assets/img/projects/nomflix.jpg",
-    githubUrl: "https://github.com/rlackswhd91/nomflix",
+    githubUrl: "https://github.com/rlackswhd91/Nomflix-v2.0",
     description:
       "Nomflix is a responsive front-end app that retrieves movies and TV series data. It was built with React, HTML and CSS with styled component. Data was driven from using third party API from ‘The Movie Database API. Main features include ; Search TV & Movie Get list of movies & TVs Show Collection of Movie Show related Episodes and seasons "
   },
